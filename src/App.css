@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.card_layout{
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-row-gap: 30px;
+  grid-column-gap: 0px;
+  margin-top: 20px;
+  display: grid;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  clear: both;
+}
+.card{
+  border-radius: 4px !important;
+  padding: 15px 20px;
+    cursor: pointer;
+    border: 1px solid #E4E2E2;
+}
+.card:hover {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%) !important;
+  border: 1px solid #003E75;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  padding: 20px;
+}
+.icon16 {
+  width: 16px;
+  height: 16px;
+}
+.di-block{
+   display: inline-block;
+}
+.icon-email{
+  background:url(./images/email.svg) no-repeat
+}
+.icon-phone{
+  background:url(./images/phone.svg) no-repeat
+}
+.icon-location{
+  background:url(./images/location.svg) no-repeat;
+  flex: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.v-middle{
+  vertical-align: middle;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mr-5{
+  margin-right: 5px !important;
+}
+.mr-10{
+  margin-right: 10px !important;
+}
+.icon20{
+  width: 20px;
+  height: 20px;
+}
+.info-text{
+  color: #333;
+  
+}
+.mb-0{
+  margin-bottom: 0px !important;
+}
+.mt-0{
+  margin-top: 0px !important;
+}
+body{
+  line-height: 24px;
 }
